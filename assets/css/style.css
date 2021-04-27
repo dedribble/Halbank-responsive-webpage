@@ -255,6 +255,7 @@ main > .main-account-box > .second-bx {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    background-color: #111;
     background-image: url("/assets/images/5026662.jpg");
     border-radius: 4px;
     padding:12px;
