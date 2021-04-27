@@ -13,6 +13,7 @@ nav {
     background-color: #fff;
     position: sticky;
     top: -1px;
+    z-index: 1;
 }
 
 nav > .menu-btn {
@@ -208,7 +209,7 @@ main > .main-account-box > .first-bx > .balance > p > span {
 }
 
 main > .main-account-box > .first-bx > .balance > span {
-    margin-top: 4px;
+    margin-top: 16px;
 }
 
 main > .main-account-box > .first-bx > .transfer-link {
@@ -372,7 +373,7 @@ main > .banks > .bank-name > .name-logo>.name-num > .phone > a svg {
 main > .banks > .bank-name > .name-logo > .bank-logo {
     display: flex;
     justify-content: flex-end;
-    position: absolute;
+    position: relative;
     top:-26px;
     right: -2px;
 }
@@ -474,7 +475,7 @@ main > .latest-all-secure > .latest-transaction > .header > .period {
     padding: 10px;
     background-color: #f3f2f2;
     border-radius: 4px;
-    margin-left: 330px;
+    margin-left: 345px;
 }
 
 main > .latest-all-secure > .latest-transaction > .header > .period a {
@@ -542,6 +543,25 @@ main > .latest-all-secure > .latest-transaction > table tr .amount {
     text-align: right;
 }
 
+main > .latest-all-secure > .latest-transaction > table tr #see-all {
+display: flex;
+padding: 16px;
+font-size: 20px;
+color: #333;
+}
+
+main > .latest-all-secure > .latest-transaction > table tr #see-all > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > .latest-all-secure > .latest-transaction > table tr #see-all > span > svg {
+    width:20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
 main > .latest-all-secure > .latest-transaction > table tr td > .status {
     width: 10px;
     height: 10px;
@@ -564,4 +584,205 @@ main > .latest-all-secure > .latest-transaction > table tr td > .black {
     background-color: #111;
 }
 
+main > .latest-all-secure > .all-expenses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-top: 3%;
+}
+
+main > .latest-all-secure > .all-expenses >.top {
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+}
+
+main > .latest-all-secure > .all-expenses > .top > p {
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+main > .latest-all-secure > .all-expenses > .top > .dwy {
+    display: flex;
+    align-items: center;
+    margin: 12px 0 3px 0;
+}
+
+main > .latest-all-secure > .all-expenses > .top > .dwy > .dwy-box {
+    margin-right: 26px;
+}
+
+main > .latest-all-secure > .all-expenses > .top > .dwy > .dwy-box > small {
+    font-size: 14px;
+    color: #666;
+    font-weight: 600;
+}
+
+main > .latest-all-secure > .all-expenses > .top > .dwy > .dwy-box > p {
+    font-size: 18px;
+    color: #111;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+}
+
+main > .latest-all-secure > .all-expenses > .top > .dwy > .dwy-box > p > span {
+    font-size: 14px;
+    color: #666;
+}
+
+main > .latest-all-secure > .all-expenses > .bottom {
+    padding: 22px 20px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+main > .latest-all-secure > .all-expenses > .bottom >.circle-color{
+    display: grid;
+    place-items: center;
+    margin-right: 60px;
+}
+
+main > .latest-all-secure > .all-expenses > .bottom >.circle-color > .red {
+    width: 160px;
+    height: 160px;
+    display: grid;
+    place-items: center;
+    border: 10px solid #ccc;
+    border-left-color: #ff0000;
+    border-right-color: #ff0000;
+    border-bottom-color: #ff0000;
+    transform: rotate(30deg);
+    border-radius: 50%;
+    position: relative;
+}
+
+main > .latest-all-secure > .all-expenses > .bottom > .circle-color > .red > .green {
+    width: 130px;
+    height: 130px;
+    border: 10px solid #ccc;
+    border-left-color: #0fac6f;
+    border-bottom-color: #0fac6f;
+    transform: rotate(-20deg);
+    border-radius: 50%;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+main > .latest-all-secure > .all-expenses > .bottom > .circle-color> .red > .green >.black {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #ccc;
+    border-left-color: #111;
+    border-bottom-color: #111;
+    transform: rotate(20deg);
+    border-radius: 50%;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+main > .latest-all-secure > .all-expenses > .bottom >.circle-color> .red > .green >.black > .blue {
+    width: 70px;
+    height: 70px;
+    border: 10px solid #ccc;
+    border-top-color: #3b7aee;
+    transform: rotate(-20deg);
+    border-radius: 50%;
+    position: relative;
+}
+
+main > .latest-all-secure > .all-expenses > .bottom > .summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 12px 20px;
+}
+
+main > .latest-all-secure > .all-expenses > .bottom > .summary > .rows {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+main > .latest-all-secure > .all-expenses > .bottom > .summary > .rows > .circle {
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin-right: 20px;
+}
+
+main > .latest-all-secure > .all-expenses > .bottom > .summary > .rows > .red {
+    background-color: #ff0000;
+}
+
+main > .latest-all-secure > .all-expenses > .bottom > .summary > .rows > .blue {
+    background-color: #3b7aee;
+}
+
+main > .latest-all-secure > .all-expenses > .bottom > .summary > .rows > .green {
+    background-color: #0fac6f;
+}
+
+main > .latest-all-secure > .all-expenses > .bottom > .summary > .rows > .black {
+    background-color: #000;
+}
+
+main > .latest-all-secure > .secure {
+    width: 100%;
+    background-color: #000;
+    margin-top: 3%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+main > .latest-all-secure > .secure > p{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+main > .latest-all-secure > .secure > img{
+    width: 250px;
+}
+
+main > .latest-all-secure > .secure > .two-factor{
+    width: 250px;
+    text-align: center;
+}
+
+main > .latest-all-secure > .secure > .two-factor p{
+    color: #fff;
+}
+
+main > .latest-all-secure > .secure > .add-authentication {
+    padding: 16px;
+    background-color: #fff;
+    height: 48px;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+    margin: 20px 0 6px 0;
+}
+
+main > .latest-all-secure > .secure > .add-authentication > a {
+    text-decoration: none;
+    font: 16px;
+    color: #333;
+    font-weight: 800;
+}
 
